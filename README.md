@@ -3,7 +3,7 @@ Repository for the wind turbine design optimization cases
 
 ## Aerodynamic-only optimization case
 
-The aerodynamic-only optimization case is led by Helena Canet at the Technical University of Munich, Germany.  
+The aerodynamic-only optimization case is led by [Helena Canet](mailto:helena.canet@tum.de) at the Technical University of Munich, Germany.  
 
 ### Installation of the Python-based framework
 
@@ -31,6 +31,11 @@ The installation instructions below use the environment name, "wisdem-env," but 
         python runCCBlade.py
 
 5.  Build the optimization setup
+
+The Python-based framework is maintained by [Pietro Bortolotti](mailto:pietro.bortolotti@nrel.gov). Contact him if you have any question.
+
+### Installation of the Matlab-based framework
+
 
 ## Structural-only optimization case
 This case has not been defined yet

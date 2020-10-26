@@ -16,14 +16,22 @@ The installation instructions below use the environment name, "wisdem-env," but 
         conda config --add channels conda-forge
         conda create -y --name wisdem-env python=3.8
         conda activate wisdem-env
-    
-2.  Use conda to install the build dependencies, but then install WISDEM from source.  Not the differences between Windows and Mac/Linux build systems
 
-        conda install -y wisdem git
-
-3.  Navigate to your desired directory (cd) and clone the repository 
+2.  Navigate to your desired directory (cd) and clone the repository 
 
         git clone https://github.com/IEAWindTask37/WP3_1
+
+3.  Use conda to install the build dependencies, but then install WISDEM from source.  Note the differences between Windows and Mac/Linux build systems
+
+        conda install -y wisdem git
+        conda remove --force wisdem
+        conda install compilers     # (Mac / Linux only)
+        conda install m2w64-toolchain libpython       # (Windows only)
+        git clone https://github.com/WISDEM/WISDEM.git
+        cd WISDEM
+        git checkout develop
+        python setup.py develop
+        cd ..
 
 4.  Navigate to the script, run it, and check the output files that are generated
 
